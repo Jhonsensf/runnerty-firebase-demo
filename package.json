@@ -1,0 +1,21 @@
+{
+  "name": "runnerty-firebase-demo",
+  "version": "1.0.0",
+  "description": "A runnerty chain demo that sends an email to every new user register in our Firebase realtime database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "runnerty",
+    "firebase",
+    "example"
+  ],
+  "author": "José Antonio Ruiz",
+  "license": "MIT",
+  "dependencies": {
+    "@runnerty/trigger-firebase": "latest",
+    "@runnerty/executor-mail": "latest",
+    "@runnerty/notifier-console": "latest"
+  }
+}

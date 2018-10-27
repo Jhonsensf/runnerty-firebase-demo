@@ -1,0 +1,27 @@
+{
+  "chains": [
+    {
+      "id": "LISTEN_FOR_NEW_USERS",
+      "name": "It will listen for new users in the document /users/ of out Firebase database",
+      "triggers": [
+        {
+          "id": "firebase_default",
+          "document": "/users/"
+        }
+      ],
+      "processes": [
+        {
+          "id": "SEND_WELLCOME_EMAIL",
+          "name": "Sends a wellcome email to the new user",
+          "exec": {
+            "id": "mail_default",
+            "to": ["@gv(email)"],
+            "subject": "Welcome to MyAppName",
+            "title": "Ey @GV(name) @gv(surname) welcome to MyAppName",
+            "message": "This is my welcome message."
+          }
+        }
+      ]
+    }
+  ]
+}
