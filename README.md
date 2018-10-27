@@ -17,12 +17,13 @@ Go to the directory
 cd runnerty-simple-twitter-bot
 npm install
 ```
+In the config.json file add your firebase and email account data.
 
 Run Runnerty
 ```
 runnerty
 ```
 
-### Expected result:
+### Build it yourself:
 
-The chain will listen to new followers of the given Twitter accound and send them automatically a direct message.
+You can know how to configure and build it from scratch reading this article:

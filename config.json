@@ -1,0 +1,29 @@
+{
+  "triggers": [
+    {
+      "id":"firebase_default",
+      "type":"@runnerty-trigger-firebase",
+      "serviceAccount": "/path-to/your-database-firebase-adminsdk.json",
+      "databaseURL": "https://your-database.firebaseio.com"
+    }
+  ],
+  "executors": [
+    {
+      "id": "mail_default",
+      "type": "@runnerty-executor-mail",
+      "from": "My App Name <noreply@myappname.com>",
+      "transport": "smtps://your-smtp-data/?pool=true",
+      "templateDir": "template",
+      "template": "",
+      "default": "alerts",
+      "ejsRender": true,
+      "attachments": [
+        {
+          "filename": "runnerty.png",
+          "path": "template/runnerty.png",
+          "cid": "runnerty@runnerty.png"
+        }
+      ]
+    }
+  ]
+}
