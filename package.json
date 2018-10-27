@@ -15,7 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "@runnerty/trigger-firebase": "latest",
-    "@runnerty/executor-mail": "latest",
-    "@runnerty/notifier-console": "latest"
+    "@runnerty/executor-mail": "latest"
   }
 }

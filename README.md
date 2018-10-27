@@ -26,4 +26,4 @@ runnerty
 
 ### Build it yourself:
 
-You can know how to configure and build it from scratch reading this article:
+You can know how to configure and build it from scratch reading this [article](https://medium.com/runnerty/firebase-realtime-database-runnerty-eee3c9dec6aa)
